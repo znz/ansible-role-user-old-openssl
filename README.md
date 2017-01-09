@@ -9,8 +9,6 @@
 
 ## Role Variables
 
-- `old_openssl_user`: user
-- `old_openssl_group`: group
 - `old_openssl_download_dir`: download directory
 - `old_openssl_build_dir`: build directory
 - `old_openssl_prefix`: prefix argument of configure

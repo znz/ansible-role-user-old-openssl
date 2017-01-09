@@ -1,8 +1,6 @@
 ---
-old_openssl_user: "vagrant"
-old_openssl_group: "vagrant"
-old_openssl_download_dir: "/home/vagrant/tmp"
-old_openssl_build_dir: "/home/vagrant/build"
-old_openssl_prefix: "/home/{{ old_openssl_user }}/opt/openssl-{{ old_openssl_version }}"
+old_openssl_download_dir: "/home/{{ ansible_user_id }}/tmp"
+old_openssl_build_dir: "/home/{{ ansible_user_id }}/build"
+old_openssl_prefix: "/home/{{ ansible_user_id }}/opt/openssl-{{ old_openssl_version }}"
 old_openssl_version: "0.9.8zh"
 old_openssl_sha256: "f1d9f3ed1b85a82ecf80d0e2d389e1fda3fca9a4dba0bf07adbf231e1a5e2fd6"

@@ -3,8 +3,8 @@
   file:
     state: directory
     path: "{{ old_openssl_download_dir }}"
-    owner: "{{ old_openssl_user }}"
-    group: "{{ old_openssl_group }}"
+    owner: "{{ ansible_user_uid }}"
+    group: "{{ ansible_user_gid }}"
     mode: 0755
 - name: "download old openssl"
   get_url:
@@ -15,8 +15,8 @@
   file:
     state: directory
     path: "{{ old_openssl_build_dir }}"
-    owner: "{{ old_openssl_user }}"
-    group: "{{ old_openssl_group }}"
+    owner: "{{ ansible_user_uid }}"
+    group: "{{ ansible_user_gid }}"
     mode: 0755
 - name: "extract openssl-{{ old_openssl_version }}"
   unarchive:
